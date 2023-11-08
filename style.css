@@ -1,0 +1,208 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid blue;
+    background-color:#F1FAFF;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.container {
+    padding: 0 20px;
+    box-sizing: border-box;
+    flex: 1;
+    min-height: 100vh;
+    align-self: stretch;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    max-height: 100%;
+}
+
+#location {
+    text-align: left;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#year {
+    text-align: right;
+    margin-left: auto;
+}
+
+#credentials {
+    color:gray;
+    margin-top: 0;
+}
+
+#restaurant, #freelancejob {
+    text-align: left;
+    white-space: normal;
+    max-width: 60%;
+
+}
+
+#restaurantyear, #freelanceyear  {
+    text-align: right;
+    margin-left: auto;
+    white-space: normal;
+
+}
+
+
+#Python {background-color: blue; color:aliceblue; width:90%;}
+#Java {background-color: blue;color:aliceblue; width: 70%;}
+#HTML {background-color: blue;color:aliceblue; width: 90%;}
+#CSS {background-color: blue;color:aliceblue; width: 90%;}
+#LUA {background-color: blue;color:aliceblue; width: 70%;}
+#Javascript {background-color: blue;color:aliceblue; width: 30%;}
+
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+
+    font-size: 20px;
+}
+
+a.active {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+nav {
+
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    border-top: 3px solid purple;
+    border-bottom: 1px solid purple;
+
+}
+
+#active {
+    color: blue;
+    text-decoration: underline;
+}
+
+#navigation{        
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+#navigationlist {
+    margin-right: 20px;
+    font-size: medium;
+}
+
+#aboutMe {
+    display: block;
+    list-style-type:disc;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.aboutmeList {
+    margin-right: 20px;
+    font-size: medium;
+    padding: 5px;
+    
+}
+
+.navigation {
+    margin-right: 20px;
+    font-size: large;
+}
+
+figure {
+    align-items: left;
+    width: 250px;
+    border-right: 1px solid gray;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-left: -5px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin-left: 2px;
+    
+}
+
+figcaption {
+    text-align: center;
+    padding: 7px;
+    display: block;
+    width: 100%;
+    margin-top: 1px;
+
+}
+#email {
+    color: blue;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: smaller;
+    border-top: 1px solid gray;
+
+}
+
+footer {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    html, body {
+        flex-direction: column;
+    }
+    .parent {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container {
+        padding: 0 10px;
+    }
+}
